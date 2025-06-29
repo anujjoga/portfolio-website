@@ -1,0 +1,447 @@
+
+
+.projects-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 8rem 0 4rem;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.projects-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* To-Do List Styles */
+.todo-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.todo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.todo-header {
+    background: linear-gradient(135deg, #4a90e2, #357abd);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.todo-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.todo-header p {
+    opacity: 0.9;
+}
+
+.todo-form {
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.todo-form input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.todo-form input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.todo-form button {
+    padding: 12px 20px;
+    white-space: nowrap;
+}
+
+.todo-filters {
+    padding: 1.5rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid #eee;
+    background: #f8f9fa;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 2px solid #4a90e2;
+    background: transparent;
+    color: #4a90e2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #4a90e2;
+    color: white;
+}
+
+.todo-stats {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background: #e9ecef;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.todo-list {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+    background: #f8f9fa;
+}
+
+.todo-item.completed {
+    opacity: 0.7;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.todo-checkbox {
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todo-text {
+    flex: 1;
+    font-size: 1rem;
+    color: #333;
+}
+
+.todo-actions {
+    padding: 1.5rem 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.todo-actions .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+/* Product Showcase Styles */
+.products-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.products-header h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.products-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.products-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-controls,
+.sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.products-controls label {
+    font-weight: 600;
+    color: #333;
+}
+
+.products-controls select {
+    padding: 8px 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    background: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.products-controls select:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.product-content {
+    padding: 1.5rem;
+}
+
+.product-category {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #4a90e2;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.product-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.product-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #4a90e2;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.product-rating .stars {
+    color: #ffd700;
+}
+
+.product-rating .rating-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.product-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.product-actions .btn {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    .projects-title {
+        font-size: 2.5rem;
+    }
+
+    .todo-form {
+        flex-direction: column;
+    }
+
+    .todo-filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .todo-stats {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .products-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-controls,
+    .sort-controls {
+        justify-content: space-between;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-title {
+        font-size: 2rem;
+    }
+
+    .todo-header {
+        padding: 1.5rem;
+    }
+
+    .todo-form {
+        padding: 1.5rem;
+    }
+
+    .todo-filters {
+        padding: 1rem 1.5rem;
+    }
+
+    .todo-item {
+        padding: 1rem 1.5rem;
+    }
+
+    .todo-actions {
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+    }
+
+    .products-controls {
+        padding: 1rem;
+    }
+
+    .product-content {
+        padding: 1rem;
+    }
+}
+
+
+.todo-item {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #666;
+}
+
+.empty-state i {
+    font-size: 3rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.empty-state h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.loading i {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+} 

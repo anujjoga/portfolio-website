@@ -1,0 +1,39 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website showcasing projects and skills.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8000 -o",
+    "dev": "http-server -p 8000 -o -c-1",
+    "build": "echo 'No build process required for static site'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "personal-website",
+    "responsive",
+    "todo-app",
+    "product-showcase",
+    "html5",
+    "css3",
+    "javascript",
+    "localstorage"
+  ],
+  "author": "Joga Anuj Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/personal-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/yourusername/personal-portfolio#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+} 

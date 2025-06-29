@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Joga Anuj Kumar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">AK</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="projects-hero-content" data-aos="fade-up">
+                <h1 class="projects-title">My Projects & Tools</h1>
+                <p class="projects-subtitle">Explore my work and interactive tools</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- To-Do List App -->
+    <section class="todo-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">To-Do List App</h2>
+            <div class="todo-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="todo-header">
+                    <h3>Task Manager</h3>
+                    <p>Organize your tasks efficiently</p>
+                </div>
+                
+                <div class="todo-form">
+                    <input type="text" id="todo-input" placeholder="Add a new task..." maxlength="100">
+                    <button id="add-todo" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Add Task
+                    </button>
+                </div>
+
+                <div class="todo-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="pending">Pending</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+
+                <div class="todo-stats">
+                    <span id="total-tasks">Total: 0</span>
+                    <span id="completed-tasks">Completed: 0</span>
+                    <span id="pending-tasks">Pending: 0</span>
+                </div>
+
+                <div class="todo-list" id="todo-list">
+                    <!-- Tasks will be dynamically added here -->
+                </div>
+
+                <div class="todo-actions">
+                    <button id="clear-completed" class="btn btn-secondary">
+                        <i class="fas fa-trash"></i> Clear Completed
+                    </button>
+                    <button id="clear-all" class="btn btn-secondary">
+                        <i class="fas fa-trash-alt"></i> Clear All
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Product Showcase</h2>
+            <div class="products-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="products-header">
+                    <h3>Tech Tools & Projects</h3>
+                    <p>Explore my collection of tools and projects</p>
+                </div>
+
+                <div class="products-controls">
+                    <div class="filter-controls">
+                        <label for="category-filter">Filter by Category:</label>
+                        <select id="category-filter">
+                            <option value="all">All Categories</option>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile Apps</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="tools">Development Tools</option>
+                        </select>
+                    </div>
+                    
+                    <div class="sort-controls">
+                        <label for="sort-select">Sort by:</label>
+                        <select id="sort-select">
+                            <option value="name">Name</option>
+                            <option value="rating">Rating</option>
+                            <option value="date">Date Added</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rohith Pentakota</h3>
+                    <p>Full Stack Developer passionate about creating amazing digital experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/anujjoga" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/anuj-joga-508a6a2b6" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/AnujJoga24678" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/itz_me_sonu.45" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Joga Anuj Kumar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html> 
